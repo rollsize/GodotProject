@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://slayu4ulvtxh"]
+
+[ext_resource type="Texture2D" uid="uid://bhp1vy16x5hoe" path="res://caster.png" id="1_14edo"]
+
+[node name="ArcadeLevel" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(422.5, 239)
+scale = Vector2(27.4063, 15.9375)
+texture = ExtResource("1_14edo")

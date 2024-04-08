@@ -1,0 +1,157 @@
+[gd_scene load_steps=2 format=3 uid="uid://ctdqswcs56d1t"]
+
+[ext_resource type="Theme" uid="uid://ddcd5ya6n0b7e" path="res://ui_res/MenusFontRes.tres" id="1_a3wyg"]
+
+[node name="SettingsTabs" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_a3wyg")
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 100.0
+offset_top = 50.0
+offset_right = -100.0
+offset_bottom = -100.0
+grow_horizontal = 2
+grow_vertical = 2
+tab_alignment = 1
+clip_tabs = false
+
+[node name="Гра" type="TabBar" parent="TabContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Гра"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Гра/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 32
+alignment = 1
+
+[node name="Label" type="Label" parent="TabContainer/Гра/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Н1"
+
+[node name="Label2" type="Label" parent="TabContainer/Гра/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Н2"
+
+[node name="Label3" type="Label" parent="TabContainer/Гра/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Н3"
+
+[node name="Графіка" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Графіка"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Графіка/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 32
+alignment = 1
+
+[node name="Label" type="Label" parent="TabContainer/Графіка/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Н4"
+
+[node name="Label2" type="Label" parent="TabContainer/Графіка/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Н5"
+
+[node name="Label3" type="Label" parent="TabContainer/Графіка/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Н6"
+
+[node name="Звук" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Звук"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Звук/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 32
+alignment = 1
+
+[node name="Label" type="Label" parent="TabContainer/Звук/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Н7"
+
+[node name="Label2" type="Label" parent="TabContainer/Звук/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Н8"
+
+[node name="Label3" type="Label" parent="TabContainer/Звук/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Н9"
+
+[node name="Керування" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Керування"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Керування/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 32
+alignment = 1
+
+[node name="Label" type="Label" parent="TabContainer/Керування/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Н10"
+
+[node name="Label2" type="Label" parent="TabContainer/Керування/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Н11"
+
+[node name="Label3" type="Label" parent="TabContainer/Керування/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Н12"

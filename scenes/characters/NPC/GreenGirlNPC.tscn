@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://ka168fxena41"]
+
+[ext_resource type="PackedScene" uid="uid://cdb2hi3j3ox48" path="res://scenes/characters/NPC/GreenPeaceNPC.tscn" id="1_flbm0"]
+
+[node name="GreenGirlNPC" instance=ExtResource("1_flbm0")]
+
+[node name="Sprite" parent="." index="0"]
+frame = 46
+
+[node name="Knife" parent="." index="1"]
+position = Vector2(15, 7)

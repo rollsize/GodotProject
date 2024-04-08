@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://cdb2hi3j3ox48"]
+
+[ext_resource type="Script" path="res://scripts/characters/peace_npc.gd" id="1_k0f4t"]
+[ext_resource type="Texture2D" uid="uid://djidfjxay182a" path="res://sprites/characters/Topdown_npc/shooter up Teams.png" id="1_m04ac"]
+[ext_resource type="Texture2D" uid="uid://c13r46oyunnkg" path="res://sprites/characters/Topdown_npc/shooter up.png" id="2_3l1le"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_y8y8g"]
+radius = 12.1655
+
+[node name="GreenPeaceNPC" type="Area2D"]
+rotation = 3.14159
+scale = Vector2(1.5, 1.5)
+collision_layer = 4
+collision_mask = 65
+script = ExtResource("1_k0f4t")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_m04ac")
+hframes = 16
+vframes = 6
+frame = 14
+
+[node name="Knife" type="Sprite2D" parent="."]
+position = Vector2(14, 8)
+texture = ExtResource("2_3l1le")
+hframes = 13
+vframes = 10
+frame = 22
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_y8y8g")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://ddcd5ya6n0b7e"]
+
+[ext_resource type="FontFile" uid="uid://kmmssbay2cy1" path="res://ui_res/fonts/PublicPixel.otf" id="1_spsug"]
+
+[resource]
+default_font = ExtResource("1_spsug")

@@ -1,0 +1,11 @@
+{
+	"disabled_build_options": {
+		"openxr": false
+	},
+	"disabled_classes": [
+		"NavigationAgent3D",
+		"Node3D",
+		"SkeletonIK3D"
+	],
+	"type": "build_profile"
+}
